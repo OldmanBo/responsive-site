@@ -1,3 +1,5 @@
+// Old code that is still functional, the newly added code starts from the row 46
+
 const products = document.querySelectorAll('.products p');
 const subProducts = document.querySelectorAll('.products ul');
 const arrow = document.createTextNode('arrow');
@@ -37,6 +39,9 @@ const modalToggle = function() {
     })
 }
 
+
+
+// Newly added code in order to make this poor website a little bit more presentable :D
 
 // Shoping cart logic
 let shopCart = [];
@@ -147,24 +152,6 @@ shopBtn.forEach(btn => {
         })
     })
 })
-
-
-
-
-
-
-const testBtn = document.querySelector('.shop_cart_modal-container button')
-testBtn.addEventListener('click', () => {
-    console.log(shopCart)
-
-    // Array.apply(0, Array(8)).map(function() {
-    //     return (function(charset){
-    //         return charset.charAt(Math.floor(Math.random() * charset.length))
-    //     }('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'));
-    // }).join('')
-})
-
-
 
 // Toggle shop cart modal
 document.querySelector('.shop_cart_modal_overlay').addEventListener('click', e => {

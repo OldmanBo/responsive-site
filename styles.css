@@ -210,6 +210,20 @@ ul {
     cursor: pointer;
     border-radius: 3px;
     transition: background 100ms;
+    position: relative;
+}
+.cart_item_num {
+    position: absolute;
+    display: none;
+    right: -5%;
+    top: -25%;
+    font-weight: bold;
+    color: hsl(0, 0%, 15%);
+    background-color: rgba(209, 212, 12, 0.781);
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.541);
 }
 
 .cart-btn:hover {
@@ -493,6 +507,53 @@ footer {
     color: whitesmoke;
 }
 /*Main Content End*/
+
+/* Shopping cart modal */
+.shop_cart_modal_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    min-height: 700px;
+    background-color: rgba(0, 0, 0, 0.87);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.shop_cart_modal-container {
+    background-color: whitesmoke;
+    padding: 35px;
+    width: 50%;
+    max-width: 500px;
+    min-width: 283px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.shopcart_table_row:hover {
+    background-color: rgba(255, 0, 0, 0.384);
+    cursor: pointer;
+}
+.shop_cart_modal-container table,
+.shop_cart_modal-container th,
+.shop_cart_modal-container td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.shop_cart_modal-container th,
+.shop_cart_modal-container td {
+    padding: 5px;
+}
+
+.shop_cart_modal-container button {
+    margin-top: 10px;
+}
+
+
+
 
 /*Small Devices*/
 
